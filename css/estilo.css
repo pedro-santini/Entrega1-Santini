@@ -1,0 +1,81 @@
+/*HEADER*/
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(53, 53, 53);
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.home{
+    align-content: center;
+    height: 80%;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+
+}
+.titulo{
+    color: black;
+    font-size: 3rem;
+    height: 10px;
+}
+
+.subtitulo{
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(56, 56, 56);
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cuadrante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div input, select{
+    margin-bottom: 10px;
+}
+
+.infoPersonal{
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #dce8f8;
+    width: 80%;
+}
+
+.consigna{
+    width: 80%;
+}

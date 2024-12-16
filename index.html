@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Calorías</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg w-100 nav">
+                <div class="container-fluid">
+                    <a href="./pagina/explicacion.html"> 
+                        <span>Cómo funciona</span>
+                    </a>
+                </div>
+            </nav>
+            
+    </header>
+    <main>
+        
+        <section class="home">
+        <h1 class="titulo">SIMULADOR DE CALORÍAS</h1>
+        <p class="subtitulo">Ingrese sus calorías diarias y nosotros haremos la cuenta por ti</p>
+        </section>
+
+        <section class="usuario">
+
+            <div class="infoPersonal cuadrante" id="infoPersonal">
+                <h3> DATA PERSONAL </h3>
+                <label for="nombreUsuario">Nombre:</label>
+                <input type="text" id="nombreUsuario" placeholder="Ingresa tu nombre">
+
+                <label for="sexoUsuario">Sexo:</label>
+                <select id="sexoUsuario">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+
+                <label for="edadUsuario">Edad:</label>
+                <input type="number" id="edadUsuario" placeholder="Ingresa tu edad">
+
+                <label for="alturaUsuario">Altura (cm):</label>
+                <input type="number" id="alturaUsuario" placeholder="Ingresa tu altura">
+
+                <label for="pesoUsuario">Peso (kg):</label>
+                <input type="number" id="pesoUsuario" placeholder="Ingresa tu peso">
+
+                <label for="objetivoUsuario">Objetivo de la alimentación:</label>
+                <select id="objetivoUsuario">
+                    <option value="perder">Perder peso</option>
+                    <option value="aumentar">Aumentar peso</option>
+                    <option value="mantener">Mantener peso</option>
+                </select>
+
+                <label for="actividadUsuario">Nivel de actividad:</label>
+                <select id="actividadUsuario">
+                    <option value="sedentaria">Sedentaria</option>
+                    <option value="ligera">Ligera</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="intensa">Intensa</option>
+                    <option value="extrema">Extrema</option>
+                </select>
+
+                <p>Guarde los datos y luego ingrese los alimentos con sus calorías</p>
+                <button id="guardarInfo" type="button">Guardar Datos</button>
+            </div>
+
+            <div class="infoAlimentacion cuadrante" id="infoAlimentacion">
+                <h3> INFO ALIMENTACIÓN</h3>
+                <div id="comidasInputs">
+                    <input type="text" id="comidaInput" placeholder="Comida consumida">
+                    <input type="number" id="caloriasInput" placeholder="Calorías consumidas">
+                    <button id="agregarComida">Agregar comida</button>
+                </div>
+                <div id="listaComidas"></div>
+                <p id="totalCalorias">Total calorías del día: 0</p>
+                <button id="finalizarDia">Finalizar día</button>
+            </div>
+
+        </section>
+
+    </main>
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
